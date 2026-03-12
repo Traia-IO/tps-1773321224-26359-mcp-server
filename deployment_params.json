@@ -1,0 +1,29 @@
+{
+  "github_url": "https://github.com/Traia-IO/tps-1773321224-26359-mcp-server",
+  "mcp_server": {
+    "name": "tps-1773321224-26359-mcp",
+    "description": "Integration test",
+    "server_type": "streamable-http",
+    "requires_api_key": false,
+    "capabilities": [
+      "finds_pets_by_status",
+      "find_purchase_order_by_id",
+      "delete_purchase_order_by_identifier",
+      "logs_user_into_the_system",
+      "logs_out_current_logged_in_user_session",
+      "place_an_order_for_a_pet"
+    ],
+    "payment_protocol": "402",
+    "dual_mode": true,
+    "dual_mode_description": "Supports both authenticated (free with API key) and payment (402 protocol) modes"
+  },
+  "deployment_method": "cloud_run",
+  "gcp_project_id": "traia-mcp-servers",
+  "gcp_region": "us-central1",
+  "tags": [
+    "tps_1773321224_26359",
+    "api",
+    "mcp"
+  ],
+  "ref": "main"
+}
